@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentInfoActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilUpisPredmeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietNazivPredmeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Upiši naziv predmeta" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilProfesor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilUpisPredmeta">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietProfesor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Profesor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilAkGod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilProfesor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietAkGod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tenutna godina" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilSatiPredavanja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilAkGod">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietSatiPredavanja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Broj sati predavanja" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilSatiLv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilSatiPredavanja">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietSatiLV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Broj sati LV-a" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnUpisPredmeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upis"
+        app:layout_constraintTop_toBottomOf="@+id/tilUpisPredmeta"
+        app:layout_constraintStart_toStartOf="@+id/tilUpisPredmeta"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
