@@ -78,7 +78,11 @@ public class SummaryActivity extends AppCompatActivity {
         oBtnPovratak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent oPovratakNaPočetnu = new Intent(getApplicationContext(), PersonalInfoActivity.class);
+                Student student = new Student(sImeStudenta, sPrezimeStudenta, sNazivPredmeta);
+                MyDataStorage spremnik = MyDataStorage.getInstance();
+                spremnik.setStudents(student);
+
+                Intent oPovratakNaPočetnu = new Intent(getApplicationContext(), StartActivity.class);
                 oPovratakNaPočetnu.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(oPovratakNaPočetnu);
 

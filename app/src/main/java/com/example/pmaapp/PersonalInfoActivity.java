@@ -41,6 +41,7 @@ public class PersonalInfoActivity extends AppCompatActivity {
                 sDatumRodenjaStudenta = oTietUpisiDatumRodenja.getText().toString();
 
                 Intent oUpisiPersonalInfoStudentaIntent = new Intent(getApplicationContext(), StudentInfoActivity.class);
+
                 oUpisiPersonalInfoStudentaIntent.putExtra("imeStudenta", sImeStudenta);
                 oUpisiPersonalInfoStudentaIntent.putExtra("prezimeStudenta", sPrezimeStudenta);
                 oUpisiPersonalInfoStudentaIntent.putExtra("datumRodenjaStudenta", sDatumRodenjaStudenta);

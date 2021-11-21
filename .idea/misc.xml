@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Silvio/AndroidStudioProjects/PmaApp/app/src/main/res/layout/activity_personal_info.xml" value="0.25" />
+        <entry key="..\:/Users/Silvio/AndroidStudioProjects/PmaApp/app/src/main/res/layout/activity_start.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/Silvio/AndroidStudioProjects/PmaApp/app/src/main/res/layout/activity_student_info.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/Silvio/AndroidStudioProjects/PmaApp/app/src/main/res/layout/activity_summary.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Silvio/AndroidStudioProjects/PmaApp/app/src/main/res/layout/header_holder.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Silvio/AndroidStudioProjects/PmaApp/app/src/main/res/layout/student_holder.xml" value="0.1793478260869565" />
       </map>
     </option>
   </component>
