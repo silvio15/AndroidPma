@@ -41,7 +41,7 @@ public class StartActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent oUpisiNazivPredmetaIntent = new Intent(getApplicationContext(), PersonalInfoActivity.class);
+                Intent oUpisiNazivPredmetaIntent = new Intent(getApplicationContext(), CreateNewRecordActivity.class);
                 startActivity(oUpisiNazivPredmetaIntent);
             }
         });
