@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.example.pmaapp.PersonalInfoFragment;
+import com.example.pmaapp.StudentInfoFragment;
+import com.example.pmaapp.SummaryFragment;
 
 public class MyAdapter extends FragmentPagerAdapter {
     private static int NUM_ITEMS = 3;

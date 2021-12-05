@@ -8,35 +8,55 @@
     android:padding="16dp"
     tools:context=".StudentInfoFragment">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputPredmet"
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/inputPredmet"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/inptPredmet"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="predmet" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/inputProfesor"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/inputPredmet">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/inptProfesor"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="profesor" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <Spinner
+        android:id="@+id/spPredmet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+    </Spinner>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inptPredmet"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="predmet" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputProfesor"
+    <Spinner
+        android:id="@+id/spProfesor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPredmet">
+        app:layout_constraintTop_toBottomOf="@+id/spPredmet">
+    </Spinner>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inptProfesor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="profesor" />
-    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputAkGod"
@@ -44,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputProfesor">
+        app:layout_constraintTop_toBottomOf="@+id/spProfesor">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"

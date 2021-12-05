@@ -1,14 +1,12 @@
 package com.example.pmaapp;
 
 import android.content.Context;
+import android.net.Uri;
+import android.os.Bundle;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -18,10 +16,20 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import static android.app.Activity.RESULT_OK;
+import androidx.fragment.app.Fragment;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.google.android.material.textfield.TextInputLayout;
 
-import static android.app.Activity.RESULT_OK;
 
 public class PersonalInfoFragment extends Fragment {
     private static final int REQUEST_IMAGE_CAPTURE = 1;
@@ -125,5 +133,4 @@ public class PersonalInfoFragment extends Fragment {
             imageView.setImageBitmap(imageBitmap);
         }
     }
-
 }

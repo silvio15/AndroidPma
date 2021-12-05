@@ -1,7 +1,21 @@
 package com.example.pmaapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import android.os.Bundle;
+
+import com.example.pmaapp.PersonalInfoFragment;
+import com.example.pmaapp.R;
+import com.example.pmaapp.StudentInfoFragment;
+import com.example.pmaapp.SummaryFragment;
+import com.example.pmaapp.MyAdapter;
 
 import android.os.Bundle;
 
